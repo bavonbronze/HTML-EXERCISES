@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jp card that have Card Social Media Icons</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      width: 250px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img.profile-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .card .name {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .card .role {
+      color: #777;
+      margin-bottom: 15px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .social-icons a img {
+      width: 25px;
+      height: 25px;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .social-icons a img:hover {
+      transform: scale(1.2);
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card-container">
+
+    <!-- Profile Card 1 -->
+    <div class="card">
+      <img src="bavon.jpg" alt="bavon">
+      <div class="name">jp bavon bronze</div>
+      <div class="role">IT man from NYANZA</div>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
+        </a>
+        <a href="https://discord.com/" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord">
+        <a href="https://gmail.com/"   target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail">
+            <a href="https://tik tok.com/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/3046/3046122.png" alt="tik tok">
+
+        </a>
+        </a>
+      </div>
+</body>
+</html>
