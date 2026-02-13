@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ICT Tech Solutions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+        header {
+            background: #0a3d62;
+            color: white;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f39c12;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(10,61,98,0.8), rgba(10,61,98,0.8)),
+                        url('https://images.unsplash.com/photo-1519389950473-47ba0277781c');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            margin-bottom: 25px;
+            font-size: 18px;
+        }
+
+        .btn {
+            background: #f39c12;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #e67e22;
+        }
+
+        section {
+            padding: 60px 10%;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 30px;
+            font-size: 32px;
+            color: #0a3d62;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .product-card h3 {
+            margin: 15px 0 10px;
+        }
+
+        /* Owner Card */
+        .owner-card {
+            background: white;
+            max-width: 400px;
+            margin: 0 auto 40px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .owner-card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .owner-card h3 {
+            margin-bottom: 5px;
+            color: #0a3d62;
+        }
+
+        .owner-card a {
+            color: #0a3d62;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Contact Form */
+        .contact form {
+            max-width: 500px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact input,
+        .contact textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .contact button {
+            background: #0a3d62;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background: #074172;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ICT Tech Solutions by IT bronze</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Latest ICT & Electronic Devices</h2>
+    <p>Smart Devices • Office Equipment • Home Electronics</p>
+    <a href="#products" class="btn">Shop Now</a>
+</section>
+
+<section id="products">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1603899122634-f086ca5f5ddd" alt="iPhone">
+            <h3>Apple iPhone</h3>
+            <p>Latest generation smartphones.</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1593642634315-48f5414c3ad9" alt="Epson Printer">
+            <h3>Epson Printer</h3>
+            <p>High-quality printing solutions.</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32" alt="Camera">
+            <h3>Digital Camera</h3>
+            <p>Professional photography equipment.</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1" alt="Smart TV">
+            <h3>Smart TV</h3>
+            <p>Ultra HD smart televisions.</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1580894908361-967195033215" alt="Radio">
+            <h3>Radio</h3>
+            <p>Portable radios with clear sound.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+
+    <div class="owner-card">
+        <img src="jp.webp" alt="jp">
+        <h3>Jp ITbronze</h3>
+        <p>Owner / ICT Specialist</p>
+        <p><strong>Phone:</strong> 
+            <a href="tel:+250783443203">+250790683583</a>
+        </p>
+        <p><strong>Email:</strong>itbronze1@gmail.co.com</p>
+    </div>
+
+    <form>
+        <input type="text" placeholder="ITbronze" required>
+        <input type="email" placeholder="itbronze1@gmail.com" required>
+        <textarea rows="5" placeholder="Shine with bronze" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 ICT Tech Solutions | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
